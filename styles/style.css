@@ -34,6 +34,7 @@ body {
   font-family: var(--font-primary);
   font-size: 1.6rem;
   color: #fff;
+  width: 100%;
 }
 
 a {
@@ -126,7 +127,7 @@ p {
 
 .card {
   background-color: var(--Light-red);
-  background-image: url(./images/icon-work.svg);
+  background-image: url(/images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: right 1.75rem top -9px;
   display: flex;
@@ -136,7 +137,24 @@ p {
 }
 .card:nth-child(3) {
   background-color: var(--Soft-blue);
-  background-image: url(images/icon-play.svg);
+  background-image: url(/images/icon-play.svg);
+}
+
+.card:nth-child(4) {
+  background-color: var(--Light-red-study);
+  background-image: url(/images/icon-study.svg);
+}
+.card:nth-child(5) {
+  background-color: var(--Lime-green);
+  background-image: url(/images/icon-exercise.svg);
+}
+.card:nth-child(6) {
+  background-color: var(--Violet);
+  background-image: url(/images/icon-social.svg);
+}
+.card:nth-child(7) {
+  background-color: var(--Soft-orange);
+  background-image: url(/images/icon-self-care.svg);
 }
 
 .card .info {
@@ -148,6 +166,11 @@ p {
   flex-wrap: wrap;
   cursor: pointer;
   transition: 0.5s;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.info:hover {
+  background-color: hsl(264, 64%, 52%);
 }
 
 .info h2 {
@@ -156,11 +179,17 @@ p {
   width: 100%;
 }
 .info > h2::after {
-  content: url(images/icon-ellipsis.svg);
+  content: url(/images/icon-ellipsis.svg);
   float: right;
 }
 
 .info p {
-  font-weight: 300;
-  font-size: 1rem;
+  font-size: 300;
+  font-size: 1.5rem;
+}
+
+.info span {
+  transform: translateY(25%);
+  font-size: 0.8rem;
+  color: var(--Pale-blue);
 }
